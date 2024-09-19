@@ -1,0 +1,10 @@
+nBandejas = int(input())
+
+coposQuebrados = 0
+
+for i in range(nBandejas):
+    objetos = [int(x) for x in input().split()]
+    if objetos[0] > objetos[1]:
+        coposQuebrados = coposQuebrados + objetos[1]
+
+print(coposQuebrados)
